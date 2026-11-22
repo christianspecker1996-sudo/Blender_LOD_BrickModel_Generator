@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+id = "brickwars_optimizer"
+version = "2.7.0"
+name = "BrickWars LEGO Optimizer"
+tagline = "Rebuild brick models from blocks and bake a two-texture atlas"
+maintainer = "BrickWars"
+type = "add-on"
+blender_version_min = "5.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+[permissions]
+files = "Save PNG atlases to the chosen directory"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc", "proxy.py", "silhouette.py"]
+
+
+
+
+
+
+
