@@ -1,46 +1,45 @@
 # Blender LOD BrickModel Generator
 
-Blender-Add-on (BrickWars LEGO Optimizer), das importierte LEGO-Modelle (z. B. aus LDD oder BrickLink Studio) automatisch als Low-Poly-/LOD-Version nachbaut. Die Details des Originals werden als Texturen auf das neue Modell gebacken. Gedacht ist es vor allem für Game-Modding, etwa für Star Wars Battlefront II (2005).
+Blender add-on (BrickWars LEGO Optimizer) that automatically rebuilds imported LEGO models (e.g. from LDD or BrickLink Studio) as low-poly/LOD versions. The details of the original are baked into textures on the new model. It is mainly intended for game modding, such as Star Wars Battlefront II (2005).
 
-## Vorher / Nachher
+## Before / After
 
-**Original:** 1.600.072 Dreiecke
+**Original:** 1,600,072 triangles
 
-![High-Poly-Original](images/high_poly.png)
+![High-poly original](images/high_poly.png)
 
-**Ergebnis:** 5.015 Dreiecke mit gebackenen Texturen
+**Result:** 5,015 triangles with baked textures
 
-![Low-Poly-Ergebnis](images/low_poly.png)
+![Low-poly result](images/low_poly.png)
 
-## Funktionen
+## Features
 
-- Baut ausgewählte Modelle mit wenigen einfachen Formen neu auf, aus Einzelteilen oder aus einem zusammengefügten Mesh.
-- Die gewünschte maximale Anzahl an Dreiecken ist einstellbar und wird eingehalten.
-- Diffuse- und Normal-Map werden vom High-Poly-Modell in einen gemeinsamen Textur-Atlas gebacken.
-- Noppen lassen sich als Normal Map übernehmen, entfernen oder als Sprites darstellen.
-- Gleiche Teile teilen sich einen Texturbereich, dadurch wird die Textur schärfer.
-- Verdeckte Flächen und Teile werden entfernt.
-- Es gibt zwei Looks: Studio-Render oder heller Spielzeug-Look wie in LEGO-Spielen.
-- Eigene Low-Poly-Meshes können ebenfalls mit Texturen vom Original bebacken werden.
+- Rebuilds the selected models from a few simple shapes, either from individual parts or from a single merged mesh.
+- The maximum number of triangles is adjustable and is respected.
+- Diffuse and normal maps are baked from the high-poly model into a shared texture atlas.
+- Studs can be transferred as a normal map, removed, or displayed as sprites.
+- Identical parts share one texture area, which makes the texture sharper.
+- Hidden faces and parts are removed.
+- Your own low-poly meshes can also be baked with textures from the original.
 
-Das Originalmodell bleibt unverändert. Das Ergebnis landet als `NAME_LOWPOLY` in einer eigenen Collection.
+The original model stays unchanged. The result is created as `NAME_LOWPOLY` in its own collection.
 
 ## Installation
 
-Benötigt **Blender 5.2** oder neuer.
+Requires **Blender 5.2** or newer.
 
-1. `BrickWars_LEGO_Optimizer-2.7.0.zip` herunterladen.
-2. In Blender **Edit → Preferences → Get Extensions → ⋯ → Install from Disk** öffnen und die ZIP-Datei auswählen.
-3. Im 3D-Viewport mit **N** die Seitenleiste öffnen und den Tab **BrickWars Optimizer** wählen.
+1. Download `BrickWars_LEGO_Optimizer-2.7.0.zip`.
+2. In Blender, open **Edit → Preferences → Get Extensions → ⋯ → Install from Disk** and select the ZIP file.
+3. In the 3D viewport, press **N** to open the sidebar and select the **BrickWars Optimizer** tab.
 
-## Benutzung
+## Usage
 
-1. Modell im Objektmodus auswählen.
-2. Dreiecksbudget und Optionen einstellen.
-3. **Optimize Selection** klicken.
+1. Select the model in Object Mode.
+2. Set the triangle budget and options.
+3. Click **Optimize Selection**.
 
-<img src="images/addon_options.png" alt="Einstellungen des Add-ons" width="320">
+<img src="images/addon_options.png" alt="Add-on settings" width="320">
 
-## Lizenz
+## License
 
-GPL-3.0-or-later, siehe [LICENSE](LICENSE).
+GPL-3.0-or-later, see [LICENSE](LICENSE).
