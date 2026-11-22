@@ -2,6 +2,16 @@
 
 Blender-Add-on (BrickWars LEGO Optimizer), das importierte LEGO-Modelle (z. B. aus LDD oder BrickLink Studio) automatisch als Low-Poly-/LOD-Version nachbaut. Die Details des Originals werden als Texturen auf das neue Modell gebacken. Gedacht ist es vor allem für Game-Modding, etwa für Star Wars Battlefront II (2005).
 
+## Vorher / Nachher
+
+**Original:** 1.600.072 Dreiecke
+
+![High-Poly-Original](images/high_poly.png)
+
+**Ergebnis:** 5.015 Dreiecke mit gebackenen Texturen
+
+![Low-Poly-Ergebnis](images/low_poly.png)
+
 ## Funktionen
 
 - Baut ausgewählte Modelle mit wenigen einfachen Formen neu auf, aus Einzelteilen oder aus einem zusammengefügten Mesh.
@@ -28,6 +38,8 @@ Benötigt **Blender 5.2** oder neuer.
 1. Modell im Objektmodus auswählen.
 2. Dreiecksbudget und Optionen einstellen.
 3. **Optimize Selection** klicken.
+
+<img src="images/addon_options.png" alt="Einstellungen des Add-ons" width="320">
 
 ## Lizenz
 
